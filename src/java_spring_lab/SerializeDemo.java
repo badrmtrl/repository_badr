@@ -6,7 +6,7 @@ import java.io.IOException;
 public class SerializeDemo {
 
 	public static void main(String[] args) {
-		System.out.printf("-> start program");
+		System.out.println("-> start program");
 		Employee e = new Employee("badr","1706 shrbrooke,qc,canada",112233,101);
 		
 		try {
@@ -15,9 +15,9 @@ public class SerializeDemo {
 			  out.writeObject(e);
 			  out.close();
 			  fileOut.close();
-			  System.out.printf("Serialized data is saved in /tmp/employee.ser");
+			  System.out.println("-> Serialized data is saved in /tmp/employee.ser");
 		} catch (IOException i) {
-			 System.out.printf("++ see exception created by badr programmer: ->");
+			 System.out.println("++?? see exception created by badr programmer: ->");
 			i.printStackTrace();
 		}
 
