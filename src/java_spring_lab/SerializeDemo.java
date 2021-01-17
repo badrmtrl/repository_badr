@@ -7,7 +7,7 @@ public class SerializeDemo {
 
 	public static void main(String[] args) {
 		System.out.println("-> start program");
-		Employee e = new Employee("badr","1706 shrbrooke,qc,canada",112233,101);
+		Employee e = new Employee("badr ihaddouhen","1706 shrbrooke,qc,canada",112233,228);
 		
 		try {
 			  FileOutputStream fileOut = new FileOutputStream("tmp/employee.ser");
